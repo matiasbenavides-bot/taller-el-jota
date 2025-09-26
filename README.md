@@ -1,2 +1,2 @@
-# taller-el-jotra
+# taller-el-jota
 taller de mecanica
