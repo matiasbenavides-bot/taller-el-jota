@@ -1,0 +1,22 @@
+body{background-color: yellow;}
+header {background-color: blue;}
+header h1{text-align: center;}
+h1{text-align: center; 
+    color: white;
+    display: inline-block;
+    margin: 0 50px;
+}
+h1{border-color: blue;}
+ main h1{display: inline-block;
+    color: blue;
+}
+img{width: 300; height: 300;
+margin: 0 100px;}
+div h2{
+background-color: blue;
+color: white;
+
+}
+h3{
+
+}
