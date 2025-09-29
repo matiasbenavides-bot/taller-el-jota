@@ -10,7 +10,8 @@ h1{border-color: blue;}
  main h1{display: inline-block;
     color: blue;
 }
-img{width: 25; height: 25;}
+img{width: 25; height: 25;
+   }
 div h2{
 background-color: blue;
 color: white;
@@ -20,6 +21,7 @@ h3{
 
 
 }
+
 
 
 
