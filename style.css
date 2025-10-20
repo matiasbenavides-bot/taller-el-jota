@@ -1,3 +1,97 @@
+
+/* --- Header --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* cambio aquí */
+  align-items: center;
+  padding: 20px;
+  background-color: #0004ff;
+
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Menú links --- */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* --- Hamburguesa --- */
+.hamburger {
+  display: none; /* solo visible en móvil */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+
+.proyectos{
+  display: grid;
+}
+  
+  
+  .hamburger {
+    display: flex; /* se muestra en móvil */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px; /* debajo del header */
+    right: -250px; /* empieza fuera de la pantalla */
+    width: 200px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    transition: right 0.3s ease;
+    height: calc(100% - 70px);
+  }
+
+  .nav-links.active {
+    right: 0; /* al abrir, entra en pantalla */
+  }
+
+  .nav-links li a {
+    font-size: 30px;
+  }
+}
+
+
+
+.servicios, .servicios, .quiensomos, .contactos{
+  scroll-padding-top: 80px;
+}
+
+
 /* Fondo general */
 body {
   background-color: yellow;
@@ -6,84 +100,108 @@ body {
   padding: 0;
 }
 
-/* Encabezado */
-header {
-  background-color: blue;
-  padding: 15px 0;
+.hero {
+  
+  color: #fff;
   text-align: center;
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-header h1 {
-  color: white;
-  display: inline-block;
-  margin: 0 40px;
-  border: 2px solid white;
-  padding: 5px 15px;
-  border-radius: 10px;
-  transition: 0.3s;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
 }
 
-header h1:hover {
-  background-color: white;
-  color: blue;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
 }
 
-/* Contenedor principal */
-main {
-  text-align: center;
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
-/* Imágenes de productos */
-.flex {
+.hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-img {
-  width: 180px;
-  height: auto;
-  border: 3px solid blue;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+.btn, .btn-outline {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px blue;
+.btn {
+  background: #ffbb00;
+  color: #000;
 }
 
-/* Subtítulo */
-div h2 {
-  background-color: blue;
-  color: white;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 10px;
+.btn-outline {
+  border: 2px solid #fbff00;
+  color: #fffb00;
 }
 
-/* Títulos pequeños */
-h3 {
-  display: inline-block;
-  margin: 15px 30px;
-  color: blue;
-  font-size: 20px;
-  text-transform: uppercase;
+.hero-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #aaa;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
 }
-
-/* Pie de página */
-footer {
-  color: white;
+.servicios h1{
   text-align: center;
-  padding: 15px;
+  display: grid;
+  justify-content: center;
+  color: #000;
+}
+.servicios {
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.card{
+  border: 3px solid black;
+    background: #011aff;
+    color: white;
+  border-radius: 12px;
+  padding: 20px;
   margin-top: 20px;
-}
-h2{
-  background-color: blue;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+
 }
 
+.card1{
+  border: 3px solid black;
+   background-color: #aaa;
+   color: #000;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 
+}
 
 
 
