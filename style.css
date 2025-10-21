@@ -89,6 +89,7 @@ header {
 
 .servicios, .servicios, .quiensomos, .contactos{
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 
@@ -279,6 +280,7 @@ body {
  border-radius: 15px;
  transition: 0.5s;
 }
+
 
 
 
