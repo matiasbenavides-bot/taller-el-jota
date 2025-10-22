@@ -271,6 +271,7 @@ body {
   margin-top: 20px;
 }
 .contactos a{
+  margin-botton: 15px;
    color: rgb(0, 17, 255);
   border: 3px solid white;
   text-decoration: none;
@@ -283,6 +284,7 @@ body {
  border-radius: 15px;
  transition: 0.5s;
 }
+
 
 
 
