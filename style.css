@@ -262,28 +262,40 @@ body {
 .contactos{
   margin: 0 auto;
   width: 95%;
-  height: 100px;
+  height: 150px;
   text-align: center;
   border: 3px solid black;
     background: #011aff;
     color: white;
   border-radius: 12px;
   margin-top: 20px;
+  
 }
-.contactos a{
-  margin-botton: 15px;
-   color: rgb(0, 17, 255);
+
+.contactos a {
+  display: inline-block;    /* permite usar margin */
+  margin-bottom: 15px;      /* separa el botón de otros elementos si los hubiera */
+  color: rgb(255, 255, 255);
   border: 3px solid white;
   text-decoration: none;
   font-size: 20px;
-  background: rgb(55, 175, 0);
-
-  padding: 10px;
- padding-left: 30px;
- padding-right: 30px;
- border-radius: 15px;
- transition: 0.5s;
+  background: rgb(66, 208, 0);
+  padding: 10px 30px;
+  border-radius: 15px;
+  transition: 0.5s;
 }
+
+.contactos a:hover {
+  background: rgb(77, 255, 0);
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
 
 
 
